@@ -1,9 +1,10 @@
 # Lab 1: Exception Handling
 
 ---
-Course Name: Advanced Programming
-Course Code: CPIT-305
-Course Instructor: Dr. Rayan Mosli
+
+- **Course Name:** Advanced Programming
+- **Course Code:** CPIT-305
+- **Course Instructor:** Dr. Rayan Mosli
 
 ---
 ## What is an Exception?
@@ -23,7 +24,7 @@ System.out.println(args[0]);
 }
 }
 ```
-### Compile & Execute
+#### Compile & Execute
 
 If we compile & execute the above program without passing any command line argument, an ArrayIndexOutOfBoundsException would be thrown. This is shown in the following picture.
 
@@ -65,7 +66,7 @@ The following program reads a line (hello world) from a file and prints it on th
 import java.io.* ;
 public class CException {
 public static void main (String args[ ]) {
-FileReader fr = new FileReader (“input.txt”);
+FileReader fr = new FileReader ("input.txt");
 BufferedReader br = new BufferedReader (fr);
 //read the line from file
 String line = br.readLine();
@@ -79,7 +80,7 @@ If you try to compile this program, the program will not compile successfully an
 
 ![Screenshot 3](./public/images/img-03.png)
 
-#### Modify CException.java
+### Modify CException.java
 As we have discussed earlier, it is mandatory to handle checked exceptions. In order to compile the code above, we modify the above program so that file reading code is placed inside a try block. The expected exception (IOException) that can be raised is caught in catch block.
 ```java
 // File CException.java
@@ -87,7 +88,7 @@ import java.io.* ;
 public class CException {
 public static void main (String args[ ]) {
 try{
-FileReader fr = new FileReader (“input.txt”);
+FileReader fr = new FileReader ("input.txt");
 BufferedReader br = new BufferedReader (fr);
 //read the line form file
 String line = br.readLine();
@@ -105,32 +106,32 @@ Note: Before executing, make sure that a text file named input.txt must be place
 
 ![Screenshot 4](./public/images/img-04.png)
 
-### The finally block
+## The finally block
 The finally block always executes regardless of exception is raised or not while as you remembered the catch block only executes when an exception is raised.
 
 
-Exampel Code : FBlockDemo.java
+Example Code : FBlockDemo.java
 ```java
 // File FBlockDemo.java
 import java.io.* ;
 public class FBlockDemo {
 public static void main (String args[ ]) {
-try{
-FileReader fr = new FileReader (“strings.txt”);
+try{"
+FileReader fr = new FileReader ("strings.txt");
 BufferedReader br = new BufferedReader (fr);
 //read the line form file
 String line = br.readLine();
 System.out.println(line);
-catch( IOExceptoin ex) {
+catch(IOExceptoin ex) {
 System.out.println(ex);
 }
 finally {
-System.out.println(“finally block always execute”);
+System.out.println("finally block always execute");
 }
 }
 }
 ```
-### Compile & Execute
+#### Compile & Execute
 The program above, will read one line from string.txt file. If string.txt is not present in the same directory the FileNotFoundException would be raised and catch block would execute as well as the finally block.
 
 ![Screenshot 5](./public/images/img-05.png)
