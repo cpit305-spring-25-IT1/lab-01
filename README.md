@@ -145,7 +145,7 @@ Write a program in java that takes in a value from a user to find the square of 
 
 ## Submission
 
-[Submit using the following GitHub classroom link](#)
+[Submit using the following GitHub classroom link](https://classroom.github.com/a/fjyVeW0C)
 
 ## How to submit your lab to GitHub Classroom
 
