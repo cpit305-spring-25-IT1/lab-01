@@ -142,3 +142,12 @@ If string.txt is present there, no such exception would be raised but still fina
 
 ## Exercise:
 Write a program in java that takes in a value from a user to find the square of an integer from 0 to 100. If the value is not an integer or within the range, then print the exception. 
+
+## Submission
+
+<h2>How to submit your lab to GitHub Classroom</h2>
+<p>The video below demonstrates how to submit your work to GitHub classroom</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/--x1yIj44-o" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
